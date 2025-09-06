@@ -3,7 +3,7 @@
     "target": "es2020",          /* Versão do JavaScript final */
     "module": "commonjs",         /* Sistema de módulos */
     "outDir": "./dist",           /* Onde o JS compilado será salvo */
-    "rootDir": "./src",           /* Onde está seu código TS */
+    "rootDir": "./",              /* Onde está seu código TS */
     "strict": true,               /* Habilita checagens de tipo estritas */
     "esModuleInterop": true,      /* Melhora a compatibilidade entre módulos */
     "skipLibCheck": true,         /* Pula a verificação de tipos de libs */

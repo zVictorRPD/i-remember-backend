@@ -1,8 +1,8 @@
-// src/db/index.ts
-import Database from "better-sqlite3";
-import { drizzle } from "drizzle-orm/better-sqlite3";
-import * as schema from "./schema";
+import { drizzle } from "drizzle-orm/libsql";
 
-const sqlite = new Database(process.env.DATABASE_URL!);
-
-export const db = drizzle(sqlite, { schema });
+export const db = drizzle({
+  connection: {
+    url: process.env.TURSO_DATABASE_URL!,
+    authToken: process.env.TURSO_AUTH_TOKEN!,
+  },
+});

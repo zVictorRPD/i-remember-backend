@@ -1,5 +1,5 @@
 // src/db/schema.ts
-import { relations } from "drizzle-orm";
+import { relations, sql } from "drizzle-orm";
 import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
 
 // Tabela de Usuários
@@ -8,7 +8,7 @@ export const usersTable = sqliteTable("users", {
   name: text("name").notNull(),
   email: text("email").notNull().unique(),
   password: text("password").notNull(),
-  createdAt: text("createdAt").notNull().default("CURRENT_TIMESTAMP"),
+  createdAt: text("createdAt").notNull().default(sql`CURRENT_TIMESTAMP`),
 });
 
 // Tabela de Eventos
@@ -25,7 +25,7 @@ export const eventsTable = sqliteTable("events", {
   twitter: text("twitter"),
   email: text("email"),
   whatsApp: text("whatsApp"),
-  createdAt: text("createdAt").default("CURRENT_TIMESTAMP"),
+  createdAt: text("createdAt").notNull().default(sql`CURRENT_TIMESTAMP`),
   userId: integer("user_id")
     .notNull()
     .references(() => usersTable.id, { onDelete: "cascade" }),

@@ -112,13 +112,13 @@ export function generateHtmlContent(event: IEvent) {
                       <v:fill type="frame" src="https://cdn.templates.unlayer.com/assets/1654251278639-bga.png" />
                       <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
             <![endif]-->
-            <div class="u-row-container" style="padding: 0px; background-image: url('images/image-7.png'); background-repeat: no-repeat; background-position: center top; background-color: transparent">
+            <div class="u-row-container" style="padding: 0px; background-image: url('https://i-remember.fly.dev/images/image-7.png'); background-repeat: no-repeat; background-position: center top; background-color: transparent">
               <div class="u-row" style="margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent;">
                 <div style="border-collapse: collapse; display: table; width: 100%; height: 100%; background-color: transparent;">
                   <!--[if (mso)|(IE)]>
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr>
-                        <td style="padding: 0px; background-image: url('images/image-7.png'); background-repeat: no-repeat; background-position: center top; background-color: transparent;" align="center">
+                        <td style="padding: 0px; background-image: url('https://i-remember.fly.dev/images/image-7.png'); background-repeat: no-repeat; background-position: center top; background-color: transparent;" align="center">
                           <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:600px;">
                             <tr style="background-color: transparent;">
                   <![endif]-->
@@ -279,13 +279,13 @@ export function generateHtmlContent(event: IEvent) {
                 </tr>
               </table>
             <![endif]-->
-            <div class="u-row-container" style="padding: 80px 0px 0px; background-image: url('images/image-8.png'); background-repeat: no-repeat; background-position: center top; background-color: transparent">
+            <div class="u-row-container" style="padding: 80px 0px 0px; background-image: url('https://i-remember.fly.dev/images/image-8.png'); background-repeat: no-repeat; background-position: center top; background-color: transparent">
               <div class="u-row" style="margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent;">
                 <div style="border-collapse: collapse; display: table; width: 100%; height: 100%; background-color: transparent;">
                   <!--[if (mso)|(IE)]>
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr>
-                        <td style="padding: 80px 0px 0px; background-image: url('images/image-8.png'); background-repeat: no-repeat; background-position: center top; background-color: transparent;" align="center">
+                        <td style="padding: 80px 0px 0px; background-image: url('https://i-remember.fly.dev/images/image-8.png'); background-repeat: no-repeat; background-position: center top; background-color: transparent;" align="center">
                           <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:600px;">
                             <tr style="background-color: transparent;">
                   <![endif]-->
@@ -310,81 +310,96 @@ export function generateHtmlContent(event: IEvent) {
                                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width:184px;">
                                               <tr>
                                     <![endif]-->
-                                    <!--[if (mso)|(IE)]>
+                                    ${event?.facebook && `
+                                      <!--[if (mso)|(IE)]>
                                       <td width="32" style="width:32px; padding-right: 5px;" valign="top">
-                                    <![endif]-->
-                                    <table role="presentation" aria-label="Facebook icon" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important; height: 32px !important; display: inline-block; border-collapse: collapse; table-layout: fixed; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; margin-right: 5px">
-                                      <tbody>
-                                        <tr style="vertical-align: top">
-                                          <td valign="middle" style="word-break: break-word; border-collapse: collapse !important; vertical-align: top">
-                                            <a href="https://facebook.com/" title="Facebook" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; line-height: inherit;">
-                                              <img src="images/image-2.png" alt="Facebook icon" title="Facebook" width="32" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: block !important; border: none; height: auto; float: none; max-width: 32px !important">
-                                            </a>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                    <!--[if (mso)|(IE)]></td><![endif]-->
-                                    <!--[if (mso)|(IE)]>
+                                        <![endif]-->
+                                        <table role="presentation" aria-label="Facebook icon" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important; height: 32px !important; display: inline-block; border-collapse: collapse; table-layout: fixed; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; margin-right: 5px">
+                                          <tbody>
+                                            <tr style="vertical-align: top">
+                                              <td valign="middle" style="word-break: break-word; border-collapse: collapse !important; vertical-align: top">
+                                                <a href="${event.facebook}" title="Facebook" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; line-height: inherit;">
+                                                  <img src="https://i-remember.fly.dev/images/image-2.png" alt="Facebook icon" title="Facebook" width="32" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: block !important; border: none; height: auto; float: none; max-width: 32px !important">
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <!--[if (mso)|(IE)]>
+                                      </td><![endif]-->
+                                      <!--[if (mso)|(IE)]>
+                                    `}
+                                    ${event?.instagram && `
                                       <td width="32" style="width:32px; padding-right: 5px;" valign="top">
-                                    <![endif]-->
-                                    <table role="presentation" aria-label="Instagram icon" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important; height: 32px !important; display: inline-block; border-collapse: collapse; table-layout: fixed; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; margin-right: 5px">
-                                      <tbody>
-                                        <tr style="vertical-align: top">
-                                          <td valign="middle" style="word-break: break-word; border-collapse: collapse !important; vertical-align: top">
-                                            <a href="https://instagram.com/" title="Instagram" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; line-height: inherit;">
-                                              <img src="images/image-3.png" alt="Instagram icon" title="Instagram" width="32" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: block !important; border: none; height: auto; float: none; max-width: 32px !important">
-                                            </a>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                    <!--[if (mso)|(IE)]></td><![endif]-->
-                                    <!--[if (mso)|(IE)]>
+                                        <![endif]-->
+                                        <table role="presentation" aria-label="Instagram icon" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important; height: 32px !important; display: inline-block; border-collapse: collapse; table-layout: fixed; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; margin-right: 5px">
+                                          <tbody>
+                                            <tr style="vertical-align: top">
+                                              <td valign="middle" style="word-break: break-word; border-collapse: collapse !important; vertical-align: top">
+                                                <a href="${event.instagram}" title="Instagram" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; line-height: inherit;">
+                                                  <img src="https://i-remember.fly.dev/images/image-3.png" alt="Instagram icon" title="Instagram" width="32" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: block !important; border: none; height: auto; float: none; max-width: 32px !important">
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <!--[if (mso)|(IE)]>
+                                      </td><![endif]-->
+                                      <!--[if (mso)|(IE)]>
+                                    `}
+                                    ${event?.twitter && `
+                                      <!--[if (mso)|(IE)]>
                                       <td width="32" style="width:32px; padding-right: 5px;" valign="top">
-                                    <![endif]-->
-                                    <table role="presentation" aria-label="Twitter icon" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important; height: 32px !important; display: inline-block; border-collapse: collapse; table-layout: fixed; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; margin-right: 5px">
-                                      <tbody>
-                                        <tr style="vertical-align: top">
-                                          <td valign="middle" style="word-break: break-word; border-collapse: collapse !important; vertical-align: top">
-                                            <a href="https://twitter.com/" title="Twitter" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; line-height: inherit;">
-                                              <img src="images/image-4.png" alt="Twitter icon" title="Twitter" width="32" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: block !important; border: none; height: auto; float: none; max-width: 32px !important">
-                                            </a>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                    <!--[if (mso)|(IE)]></td><![endif]-->
+                                        <![endif]-->
+                                        <table role="presentation" aria-label="Twitter icon" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important; height: 32px !important; display: inline-block; border-collapse: collapse; table-layout: fixed; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; margin-right: 5px">
+                                          <tbody>
+                                            <tr style="vertical-align: top">
+                                              <td valign="middle" style="word-break: break-word; border-collapse: collapse !important; vertical-align: top">
+                                                <a href="${event.twitter}" title="Twitter" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; line-height: inherit;">
+                                                  <img src="https://i-remember.fly.dev/images/image-4.png" alt="Twitter icon" title="Twitter" width="32" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: block !important; border: none; height: auto; float: none; max-width: 32px !important">
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <!--[if (mso)|(IE)]>
+                                      </td><![endif]-->
                                     <!--[if (mso)|(IE)]>
-                                      <td width="32" style="width:32px; padding-right: 5px;" valign="top">
-                                    <![endif]-->
-                                    <table role="presentation" aria-label="Email icon" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important; height: 32px !important; display: inline-block; border-collapse: collapse; table-layout: fixed; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; margin-right: 5px">
-                                      <tbody>
-                                        <tr style="vertical-align: top">
-                                          <td valign="middle" style="word-break: break-word; border-collapse: collapse !important; vertical-align: top">
-                                            <a href="mailto:john@doe.com" title="Email" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; line-height: inherit;">
-                                              <img src="images/image-5.png" alt="Email icon" title="Email" width="32" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: block !important; border: none; height: auto; float: none; max-width: 32px !important">
-                                            </a>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                    <!--[if (mso)|(IE)]></td><![endif]-->
+                                    `}
+                                    ${event?.email && `
+                                    <td width="32" style="width:32px; padding-right: 5px;" valign="top">
+                                      <![endif]-->
+                                      <table role="presentation" aria-label="Email icon" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important; height: 32px !important; display: inline-block; border-collapse: collapse; table-layout: fixed; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; margin-right: 5px">
+                                        <tbody>
+                                          <tr style="vertical-align: top">
+                                            <td valign="middle" style="word-break: break-word; border-collapse: collapse !important; vertical-align: top">
+                                              <a href="mailto:${event.email}" title="Email" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; line-height: inherit;">
+                                                <img src="https://i-remember.fly.dev/images/image-5.png" alt="Email icon" title="Email" width="32" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: block !important; border: none; height: auto; float: none; max-width: 32px !important">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!--[if (mso)|(IE)]>
+                                    </td><![endif]-->
                                     <!--[if (mso)|(IE)]>
+                                    `}
+                                    ${event?.whatsApp && `
                                       <td width="32" style="width:32px; padding-right: 0px;" valign="top">
                                     <![endif]-->
                                     <table role="presentation" aria-label="WhatsApp icon" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="width: 32px !important; height: 32px !important; display: inline-block; border-collapse: collapse; table-layout: fixed; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; margin-right: 0px">
                                       <tbody>
                                         <tr style="vertical-align: top">
                                           <td valign="middle" style="word-break: break-word; border-collapse: collapse !important; vertical-align: top">
-                                            <a href="https://whatsapp.com/" title="WhatsApp" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; line-height: inherit;">
-                                              <img src="images/image-6.png" alt="WhatsApp icon" title="WhatsApp" width="32" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: block !important; border: none; height: auto; float: none; max-width: 32px !important">
+                                            <a href="https://wa.me/+55${event.whatsApp}" title="WhatsApp" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; line-height: inherit;">
+                                              <img src="https://i-remember.fly.dev/images/image-6.png" alt="WhatsApp icon" title="WhatsApp" width="32" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: block !important; border: none; height: auto; float: none; max-width: 32px !important">
                                             </a>
                                           </td>
                                         </tr>
                                       </tbody>
                                     </table>
                                     <!--[if (mso)|(IE)]></td><![endif]-->
+                                    `}
                                     <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
                                   </div>
                                 </div>

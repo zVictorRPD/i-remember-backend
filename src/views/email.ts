@@ -137,7 +137,7 @@ export function generateHtmlContent(event: IEvent) {
                                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                                   <tr>
                                     <td style="padding-right: 0px; padding-left: 0px;" align="center">
-                                      <img align="center" border="0" src="images/image-1.webp" alt="image" title="image" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: inline-block !important; border: none; height: auto; float: none; width: 45%; max-width: 261px;" width="261"/>
+                                      <img align="center" border="0" src="https://i-remember.fly.dev/logo.webp" alt="image" title="image" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; display: inline-block !important; border: none; height: auto; float: none; width: 45%; max-width: 261px;" width="261"/>
                                     </td>
                                   </tr>
                                 </table>
